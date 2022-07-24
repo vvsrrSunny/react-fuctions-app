@@ -4,7 +4,7 @@ const people = [
     // More people...
   ]
   
-  export default function UsersTable() {
+  export default function UsersTable(props, data, data1) {
     return (
       <div className="px-4 sm:px-6 lg:px-8">
         <div className="sm:flex sm:items-center">
