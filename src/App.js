@@ -50,17 +50,14 @@ function App() {
   ]);
 
   const addUser = () => {
-    let newPeople = people
-    newPeople.push({
+    const newUser = {
       id: 7,
       name: 'Ben',
       title: 'Senior Software Developer',
       email: 'Ben@example.com',
       role: 'Member',
-    });
-    console.log("function add used is called");
-
-    setPeople(newPeople);
+    }
+    setPeople([...people, newUser]);
   }
   return (
     <div className="App">
