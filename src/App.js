@@ -49,10 +49,13 @@ function App() {
     },
   ]);
 
+const addUser = () => {
+  console.log("function add used is called");
+}
   return (
     <div className="App">
       <AppLayout>
-        <UsersTable people= {people}></UsersTable>
+        <UsersTable people = {people} addUser={addUser}></UsersTable>
       </AppLayout>
     </div>
   );
