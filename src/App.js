@@ -55,6 +55,7 @@ function App() {
   return (
     <div className="App">
       <AppLayout>
+        <button  onClick={() => setCount(count + 1)}>Test</button>
         <UsersTable props= {people} data = {count} data1 = {num}></UsersTable>
       </AppLayout>
     </div>
