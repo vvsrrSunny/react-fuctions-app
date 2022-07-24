@@ -5,7 +5,9 @@ import AppLayout from'./components/AppLayout';
 function App() {
   return (
     <div className="App">
-      <AppLayout></AppLayout>
+      <AppLayout>
+        <h1>Hello world </h1>
+      </AppLayout>
     </div>
   );
 }
