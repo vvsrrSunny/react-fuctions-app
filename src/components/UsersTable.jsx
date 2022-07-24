@@ -9,27 +9,24 @@ const people = [
 export default function UsersTable(props) {
     return (
         <TableLayout>
-        <table className="min-w-full divide-y divide-gray-300">
-            <thead className="bg-gray-50">
-                <tr>
-                    <th scope="col" className="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 sm:pl-6">
-                        Name
-                    </th>
-                    <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
-                        Title
-                    </th>
-                    <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
-                        Email
-                    </th>
-                    <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
-                        Role
-                    </th>
-                    <th scope="col" className="relative py-3.5 pl-3 pr-4 sm:pr-6">
-                        <span className="sr-only">Edit</span>
-                    </th>
-                </tr>
-            </thead>
-            <tbody className="divide-y divide-gray-200 bg-white">
+            <TableLayout.Header>
+                <th scope="col" className="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 sm:pl-6">
+                    Name
+                </th>
+                <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
+                    Title
+                </th>
+                <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
+                    Email
+                </th>
+                <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
+                    Role
+                </th>
+                <th scope="col" className="relative py-3.5 pl-3 pr-4 sm:pr-6">
+                    <span className="sr-only">Edit</span>
+                </th>
+            </TableLayout.Header>
+            <TableLayout.Body>
                 {props.people.map((person) => (
                     <tr key={person.email}>
                         <td className="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6">
@@ -45,8 +42,7 @@ export default function UsersTable(props) {
                         </td>
                     </tr>
                 ))}
-            </tbody>
-        </table>
-        </TableLayout>
+            </TableLayout.Body>
+        </TableLayout >
     )
 }
