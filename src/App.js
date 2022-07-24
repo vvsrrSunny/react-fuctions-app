@@ -62,7 +62,7 @@ function App() {
   return (
     <div className="App">
       <AppLayout>
-        <UsersTable people={people} addUser={addUser}></UsersTable>
+        <UsersTable people={people} ></UsersTable>
       </AppLayout>
     </div>
   );
