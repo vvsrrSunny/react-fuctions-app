@@ -1,12 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
+import AppLayout from'./components/AppLayout';
 
 function App() {
   return (
     <div className="App">
-      <p className="text-3xl font-bold underline">
-        Hello world!
-      </p>
+      <AppLayout></AppLayout>
     </div>
   );
 }
