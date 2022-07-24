@@ -49,13 +49,23 @@ function App() {
     },
   ]);
 
-const addUser = () => {
-  console.log("function add used is called");
-}
+  const addUser = () => {
+    let newPeople = people
+    newPeople.push({
+      id: 7,
+      name: 'Ben',
+      title: 'Senior Software Developer',
+      email: 'Ben@example.com',
+      role: 'Member',
+    });
+    console.log("function add used is called");
+
+    setPeople(newPeople);
+  }
   return (
     <div className="App">
       <AppLayout>
-        <UsersTable people = {people} addUser={addUser}></UsersTable>
+        <UsersTable people={people} addUser={addUser}></UsersTable>
       </AppLayout>
     </div>
   );
