@@ -1,12 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
 import AppLayout from'./components/AppLayout';
+import UsersTable from './components/UsersTable';
 
 function App() {
   return (
     <div className="App">
       <AppLayout>
-        <h1>Hello world </h1>
+        <UsersTable></UsersTable>
       </AppLayout>
     </div>
   );
