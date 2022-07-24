@@ -4,10 +4,10 @@ const Header = () => null;
 
 const Body = () => null;
 
-const TableLayout = ({ children }) => {
+const TableLayout = (props) => {
+    const {children} = props
     const header = children.find(el => el.type === Header);
     const body = children.find(el => el.type === Body);
-console.log(children);
     return (
 
         <div className="px-4 sm:px-6 lg:px-8 text-left">
